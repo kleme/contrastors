@@ -1,0 +1,68 @@
+stack_java:
+  datasets:
+    - name: "stack_java"
+      path: "nomic-ai/cornstack-java-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 3000000
+      length: 600000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
+
+stack_python:
+  datasets:
+    - name: "stack_python"
+      path: "nomic-ai/cornstack-python-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 10000000
+      length: 2000000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
+
+
+stack_js:
+  datasets:
+    - name: "stack_js"
+      path: "nomic-ai/cornstack-javascript-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 2334784
+      length: 400000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
+
+
+stack_php:
+  datasets:
+    - name: "stack_php"
+      path: "nomic-ai/cornstack-php-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 3000000
+      length: 600000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
+
+
+stack_ruby:
+  datasets:
+    - name: "stack_ruby"
+      path: "nomic-ai/cornstack-ruby-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 890029
+      length: 160000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
+
+stack_go:
+  datasets:
+    - name: "stack_go"
+      path: "nomic-ai/cornstack-go-v1"
+      query_prefix: "Represent this query for searching relevant code"
+      # length: 2000000
+      length: 400000
+      objective:
+        type: "triplet"
+        columns: ["query", "document", "negatives"]
